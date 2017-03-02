@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vertical-align</title>
+</head>
+<style type="text/css">
+	body {
+		font-family:verdana, arial, sans-serif;
+		font-size:100%;
+	}
+
+	h4 {
+		margin:1.4em 20px .5em;
+		color:#069;
+	}
+
+	p {
+		margin:0 20px;
+	}
+
+	p.custom sub {
+		vertical-align:-.25em;
+		font-size:65%;
+	}
+
+	p.custom sup {
+		vertical-align:.6em;
+		font-size:65%;
+	}
+
+	p.customsmall {
+		font-size:.8em;
+		vertical-align:1em;
+	}
+</style>
+<body>
+<h4>This example uses default settings of the xhtml tags "sub" and "sup"</h4>
+<p>Enjoy mountain spring H<sub>2</sub>O - it's 10<sup>5</sup> times better than tap<sup>&dagger;</sup> water!</p>
+<p><sup>&dagger;</sup><em>This means water provided through a municipal distribution system</em></p>
+<h4>This example uses classes for custom vertical alignment and type sizes</h4>
+<p class="custom">Enjoy mountain spring H<sub>2</sub>O - it's 10<sup>5</sup> times better than tap<sup>&dagger;</sup> water!</p>
+<p class="customsmall"><sup>&dagger;</sup><em>This means water provided through a municipal distribution system</em></p>
+</body>
+</html>

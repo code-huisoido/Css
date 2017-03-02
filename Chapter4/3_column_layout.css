@@ -1,0 +1,34 @@
+body {
+	text-align:center;
+}
+
+#main_wrapper {
+	width:840px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
+
+#header {
+
+}
+
+#nav {
+	width:18%;
+	float:left;
+}
+
+#content {
+	width:60%;
+	float:left;
+}
+
+#promo {
+	width:22%;
+	float:left;
+}
+
+#footer {
+	clear:both;
+}
+

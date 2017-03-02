@@ -1,0 +1,54 @@
+body {
+	font:.8em verdana, arial, sans-serif;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+#main_wrapper {
+	min-width:760px;
+	max-width:880px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#header {
+	width:auto;
+}
+
+#threecolwrap {
+	float:left;
+	width:100%;
+}
+
+#twocolwrap {
+	float:left;
+	width:100%;
+	display:inline;
+	margin-right:-170px;
+}
+
+#nav {
+	float:left;
+	width:150px;
+	display:inline;
+}
+
+#content {
+	width:auto;
+	margin-left:150px;
+	margin-right:170px;
+}
+
+#promo {
+	float:left;
+	width:170px;
+}
+
+#footer {
+	width:100%;
+	clear:both;
+	float:left;
+}

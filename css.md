@@ -116,3 +116,158 @@
 </body>
 </html>
 ```
+
+- 二栏布局
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2 column layout</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+</head>
+<link rel="stylesheet" type="text/css" href="./2_column_stable.css">
+<body>
+<div id="main_wrapper">
+<div id="header">
+	<div id="header_inner">
+		<h1>The header area</h1>
+	</div>
+</div>
+
+<div id="nav">
+	<div id="nav_inner">
+		<ul>
+			<li><a href="#">Nav item 1</a></li>
+			<li><a href="#">Nav item 2</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="content">
+	<div id="content_inner">
+		<h1>My text style sheet - h1 heading</h1>
+		<p>A brief paragraph under this heading</p>
+	</div>
+</div>
+
+<div id="footer">
+	<div id="footer_inner">
+		<p>This is the footer.</p>
+	</div>
+</div>
+</div>
+</body>
+</html>
+```
+```css
+/**
+ * 2_column_stable.css
+ */
+body {
+	text-align:center;
+}
+
+#main_wrapper {
+	width:840px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+}
+
+#header {
+
+}
+
+#nav {
+	width:22%;
+	float:left;
+}
+
+#content {
+	width:78%;
+	float:left;
+	top:0px;
+}
+
+#footer {
+	clear:both;
+}
+
+#header_inner, #nav_inner, #content_inner, #promo_inner {
+	overflow:hidden;
+}
+
+#header_inner {
+	padding:1em 2em;
+}
+
+#nav_inner {
+	padding:1em .8em;
+	border-right:3px solid #B33;	
+}
+
+#content_inner {
+	padding:0 1em 1em 1.5em;
+}
+
+#footer_innner {
+	padding:.5em 1em;
+	text-align:center;
+}
+```
+
+- 二栏流动式布局
+```css
+body {
+	text-align:center;
+}
+
+#main_wrapper {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+	max-width:960px;
+	min-width:720px;
+}
+
+#header {
+
+}
+
+#nav {
+	width:160px;
+	float:left;
+}
+
+#content {
+/*	width:78%;
+	float:left;*/
+	margin-left:160px;
+}
+
+#footer {
+	clear:both;
+}
+
+#header_inner, #nav_inner, #content_inner, #promo_inner {
+	overflow:hidden;
+}
+
+#header_inner {
+	padding:1em 2em;
+}
+
+#nav_inner {
+	padding:1em .8em;
+	border-right:3px solid #B33;	
+}
+
+#content_inner {
+	padding:0 1em 1em 1.5em;
+}
+
+#footer_innner {
+	padding:.5em 1em;
+	text-align:center;
+}
+```
